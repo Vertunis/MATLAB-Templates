@@ -1,0 +1,19 @@
+%% Koordinatentransformation nach ZYX-Konvention (Automobilkonvention
+
+% Yaw   Gieren um z-Achse mit Drehwinkel psi
+% Pitch Nicken um y-Achse mit Drehwinkel theta
+% Roll  Rollen um x-Achse mit Drehwinkel phi
+
+
+Rot_z_psi=[ cos((pi/180)*psi, sin((pi/180)*psi,    0; ...
+           -sin((pi/180)*psi, cos((pi/180)*psi,    0; ...
+            0               , 0                    1];
+
+Rot_y_theta=[ cos((pi/180)*theta, -sin((pi/180)*theta,    0; ...
+             0,                    1,                     0; ...
+             sin((pi/180)*theta,   0,                     cos((pi/180)*theta];
+
+Rot_x_phi=[ 1,                 0,                  0; ...
+            0,  cos((pi/180)*phi,   sin((pi/180)*phi; ...
+            0, -sin((pi/180)*phi,   cos((pi/180)*phi];
+        

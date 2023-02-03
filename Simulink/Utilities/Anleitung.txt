@@ -1,0 +1,17 @@
+Function in Simulink einbinden
+
+Function Matlab laden als C Code:
+
+
+Befehl in Matlab um C-Code zu kompilieren
+
+>> mex -setup -> zeigt vorhandene Compiler an -> Compiler müssen dafür installiert sein z.B SDK,GNU etc
+
+>>mex demo_sfunc.c -> erzeugt demo_sfunc.mexw64 (kompilierte Funktion in Simulink)
+
+Simulink öffnen -> Neue Datei -> Library Browser -> User defined Functions -> s-Function einfügen -> Doppelklick -> S-Functioin Name: demo_sfunc -> Apply -> Speichern
+
+Sink und Eingang angeben -> Start 
+
+
+Video zur Anleitung: https://www.youtube.com/watch?v=MYzdXfFX248

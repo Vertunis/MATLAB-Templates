@@ -1,0 +1,88 @@
+% clear all
+
+dec=5 % Zu suchende Zahl
+
+%% Code zur Erzeugung eines Binärcodes aus Dezimalzahl
+ 
+n=0;
+
+j=1; % Erster Eintrag Vektor
+n2(j)=2^n; %Zweierpotenz 1. Eintrag 2^0; 2. Eintrag 2^1 usw.
+
+%% Suche wieviel Potenzen man braucht
+    
+for j=1:inf % zu suchende Zahl bis unendlich möglich 
+    
+    n2(j)=2^n;
+    n=n+1 % Iterative erhöhung der Potenz bis n2(j) >= dec
+
+    if n2(j) >= dec 
+
+        break;  % Bricht for schleife ab    
+    end
+end
+
+n_notw=n        % Ergebnis: Anzahl der Potenzen, die max gebraucht werden
+dec_notw=n2(n)  % Ergebnis in Dezimal
+
+%% Dec in Binär umwandeln 
+bin=zeros(1,j);      % Erzeugt Nullvektor
+rest_prev=dec        % Jeweils verbleibender Restwert an Zahlen vor Umrechnung in Binär
+bin_prev=zeros(1,n)  % Erzeugung leerer bin Vektor
+
+for k=1:n
+
+    
+    
+    [bin_curr,rest_curr] = rest_in_bin(n2,k,bin_prev,rest_prev)
+
+     bin_prev = bin_curr 
+     rest_prev=rest_curr
+     
+end
+
+
+
+
+
+
+
+
+for k=2:j+1
+
+    if mod(rest,n2(j-k))==0  % Wenn Zahl genau der Zahl der max Potenz entspricht
+
+        bin(1,k-1)=1 % Erstes Bit des Binärcodes gesetzt
+        rest=rest-n2(j+2-k);
+        
+    elseif mod(rest,n2(j-k))~=0 % Wenn Zahl kleiner der maximal errechneten Potenz
+        
+        bin(1,k+1)=1 % Dann wird erst das nächste Bit gesetzt
+        rest=rest-n2(j-1)
+        
+%         mod(dec,n2(j))~=0
+        
+         % dann muss die nächstkleinere Potenz zum teilen genommen werden 
+        
+    end
+%     j=j-1; 
+end    
+%         for n2(j) < dec
+%             n=n+1;
+%             j=j+1;
+%             n2(j)=2^n;
+%         end
+% end
+% 
+% dec=mod
+% 
+% 
+% %#codegen
+% bin_str=zeros(1,1);
+% bin_str=dec2bin(dec);
+% 
+% dec = str2num(bin_str);
+% end
+% bin=n2(j);
+
+

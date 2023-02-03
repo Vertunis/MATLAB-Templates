@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html class="wf-futurapt-n5-active wf-futurapt-n4-active wf-museoslab-n7-active wf-futurapt-i5-active wf-futurapt-n7-active wf-futurapt-i7-active wf-automate-n7-active wf-futurapt-i4-active wf-minionprosubhead-n4-active wf-active"><head class="at-element-marker">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Create Flow Charts with the Pattern Wizard - MATLAB &amp; Simulink - MathWorks Deutschland</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/site6.css" rel="stylesheet" type="text/css">
+<link href="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/site6_lg.css" rel="stylesheet" media="screen and (min-width: 1200px)">
+<link href="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/site6_md.css" rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)">
+<link href="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/site6_smxs.css" rel="stylesheet" media="screen and (max-width: 991px)">
+<link href="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/site6_sm.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)">
+<link href="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/site6_xs.css" rel="stylesheet" media="screen and (max-width: 767px)">
+<!--[if IE 8]>
+<link href="/includes_content/responsive/css/site6_ie8.css?20170306" rel="stylesheet" type="text/css">
+<script src="/includes_content/responsive/scripts/bootstrap/html5shiv-printshiv.js"></script>
+<script src="/includes_content/responsive/scripts/bootstrap/respond.min.js"></script>
+<script src="/includes_content/responsive/scripts/bootstrap/placeholders.min.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<link href="/includes_content/responsive/css/site6_ie9.css?20170306" rel="stylesheet" type="text/css">
+<script src="/includes_content/responsive/scripts/bootstrap/placeholders.min.js"></script>
+<![endif]-->
+<link href="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/site6_offcanvas.css" rel="stylesheet" type="text/css">
+<!--[if IE 8]>
+<link href="/includes_content/responsive/css/site6_offcanvas_ie8.css?20170306" rel="stylesheet" type="text/css">
+<script src="/includes_content/responsive/scripts/bootstrap/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" async="" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/ahy.js"></script><script src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/aquant.js" async="" type="text/javascript"></script><script src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/jquery-latest.js"></script>
+<script src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/jquery_003.js"></script>
+<script src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/bootstrap.js"></script>
+<script src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/global.js"></script>
+<script src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/xvy5baa.js"></script>
+<style type="text/css">.tk-museo-slab{font-family:"museo-slab",serif;}.tk-futura-pt{font-family:"futura-pt","Arial","Helvetica",sans-serif;}.tk-automate{font-family:"automate",sans-serif;}.tk-minion-pro-subhead{font-family:"minion-pro-subhead",serif;}</style><style type="text/css">@font-face{font-family:museo-slab;src:url(//fonts.mathworks.com/k/0e548aec395bd99926a27577e842e818def6ba83-l.woff2) format("woff2"),url(//fonts.mathworks.com/k/0e548aec395bd99926a27577e842e818def6ba83-d.woff) format("woff"),url(//fonts.mathworks.com/k/0e548aec395bd99926a27577e842e818def6ba83-a.otf) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:futura-pt;src:url(//fonts.mathworks.com/k/87868ea7533b245fa343d5fd2e370ee0daee1db8-l.woff2) format("woff2"),url(//fonts.mathworks.com/k/87868ea7533b245fa343d5fd2e370ee0daee1db8-d.woff) format("woff"),url(//fonts.mathworks.com/k/87868ea7533b245fa343d5fd2e370ee0daee1db8-a.otf) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:futura-pt;src:url(//fonts.mathworks.com/k/fa63f4ee95571fac0c3fde550489d0874f44e7d1-l.woff2) format("woff2"),url(//fonts.mathworks.com/k/fa63f4ee95571fac0c3fde550489d0874f44e7d1-d.woff) format("woff"),url(//fonts.mathworks.com/k/fa63f4ee95571fac0c3fde550489d0874f44e7d1-a.otf) format("opentype");font-weight:500;font-style:italic;}@font-face{font-family:futura-pt;src:url(//fonts.mathworks.com/k/78f589bb61056c7dc2c42601e2fd59aa96941141-l.woff2) format("woff2"),url(//fonts.mathworks.com/k/78f589bb61056c7dc2c42601e2fd59aa96941141-d.woff) format("woff"),url(//fonts.mathworks.com/k/78f589bb61056c7dc2c42601e2fd59aa96941141-a.otf) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:futura-pt;src:url(//fonts.mathworks.com/k/599bfc6908295758da16f495738fa5c76ccf9542-l.woff2) format("woff2"),url(//fonts.mathworks.com/k/599bfc6908295758da16f495738fa5c76ccf9542-d.woff) format("woff"),url(//fonts.mathworks.com/k/599bfc6908295758da16f495738fa5c76ccf9542-a.otf) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:futura-pt;src:url(//fonts.mathworks.com/k/0ffa5e8c8eb076cc21ede9987250dfa4f2af4438-l.woff2) format("woff2"),url(//fonts.mathworks.com/k/0ffa5e8c8eb076cc21ede9987250dfa4f2af4438-d.woff) format("woff"),url(//fonts.mathworks.com/k/0ffa5e8c8eb076cc21ede9987250dfa4f2af4438-a.otf) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:futura-pt;src:url(//fonts.mathworks.com/k/3f4899217323502feaae94c179311206f731a52e-l.woff2) format("woff2"),url(//fonts.mathworks.com/k/3f4899217323502feaae94c179311206f731a52e-d.woff) format("woff"),url(//fonts.mathworks.com/k/3f4899217323502feaae94c179311206f731a52e-a.otf) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:automate;src:url(//fonts.mathworks.com/k/d4415a0418b08bbbf46e20588c2761ef9bd0aa79-l.woff2) format("woff2"),url(//fonts.mathworks.com/k/d4415a0418b08bbbf46e20588c2761ef9bd0aa79-d.woff) format("woff"),url(//fonts.mathworks.com/k/d4415a0418b08bbbf46e20588c2761ef9bd0aa79-a.otf) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:minion-pro-subhead;src:url(//fonts.mathworks.com/k/d4d1694195e6776198a56670eb3252a367c04b04-l.woff2) format("woff2"),url(//fonts.mathworks.com/k/d4d1694195e6776198a56670eb3252a367c04b04-d.woff) format("woff"),url(//fonts.mathworks.com/k/d4d1694195e6776198a56670eb3252a367c04b04-a.otf) format("opentype");font-weight:400;font-style:normal;}</style><script>try{Typekit.load();}catch(e){}</script>
+<!-- BEGIN Adobe DTM -->
+<script src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/satelliteLib-e8d23c2e444abadc572df06537e2def59c01db09.js"></script><script src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/mbox-contents-95c6a4d9c82a8d20476522984666120b54192e9b.js"></script><style id="at-mbox-default-style">.mboxDefault {visibility:hidden;}</style><style>.at-element-marker {visibility:visible;}</style>
+<!-- END Adobe DTM -->
+<link href="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/site6_de.css" rel="stylesheet" type="text/css">
+<link href="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/doc_center.css" rel="stylesheet" type="text/css">
+<!--[if IE 8]>
+<link href="/includes_content/releases/R2017a/css/doc_center_ie8.css?20170306" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 9]>
+<link href="/includes_content/releases/R2017a/css/doc_center_ie9.css?20170306" rel="stylesheet" type="text/css">
+<![endif]-->
+<link href="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+<script src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/matlab_dialog.js"></script>
+<script src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/openwith.js"></script>
+<style>
+.examples_short_list a.btn {display: none;}
+</style>
+<link rel="stylesheet" href="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/docstyle.css" type="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="toctype" itemprop="pagetype" content="ug">
+<meta name="infotype" itemprop="infotype" content="ex">
+<meta name="description" itemprop="description" content="Describes how to create MAAB-compliant flow charts automatically with the Pattern Wizard">
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/l10n.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/docscripts.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/f1help.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/mw.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/mw_004.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/mw_002.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/mw_003.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/jquery_002.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/nanoscroller.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/underscore-min.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/examples.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/doc_omniture.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/overload.js"></script>
+<!-- Additions/overrides from the doc side -->
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/docsearch.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/jquery_004.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/MathRenderer.js"></script><style type="text/css">math { visibility: hidden; }</style><link type="text/css" rel="stylesheet" href="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/main.css"><script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/dojo.js"></script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/jquery.js"></script>
+<script type="text/javascript">
+(function() {
+// Check if cookies are enabled
+function cookiesEnabled() {
+return $.cookie('check', 'valid', { expires: 1 }) && $.cookie('check') == 'valid';
+}
+// Set the language of the domain and redirect to the domain
+function setDomainLanguage(language) {
+if($.cookie("lang") != null) {
+$.cookie("lang", null, { path: '/', domain: 'ch.mathworks.com'});
+}
+$.cookie("lang", 'lang=' + language, {path: '/', expires: 365, domain: 'ch.mathworks.com'});
+}
+// do not display the domain selector if querystring is not present
+// or if query string has nocookie value
+// or if cookies are disabled
+var displayDomainSelector = true;
+function detectDomain() {
+var queries = {};
+$.each(document.location.search.substr(1).split('&'), function(c,q){
+if(q != undefined && q != "") {
+var i = q.split('=');
+if(i[1] != undefined) {
+queries[i[0].toString()] = i[1].toString();
+}
+}
+});
+var requested_domain = (queries['requestedDomain'] != undefined) ? queries['requestedDomain'] : "";
+var nocookie = (queries['nocookie'] != undefined) ? queries['nocookie'] : "";
+var client = (queries['client'] != undefined) ? queries['client'] : "";
+if(requested_domain == "" || nocookie == "true" || !cookiesEnabled() || client == "addons" || window.overrideDomainSelector) {
+displayDomainSelector = false;
+}
+}
+detectDomain();
+function extractDomain(url) {
+var domain;
+//find & remove protocol (http, ftp, etc.) and get domain
+if (url.indexOf("://") > -1) {
+domain = url.split('/')[2];
+} else {
+domain = url.split('/')[0];
+}
+//find & remove port number
+domain = domain.split(':')[0];
+return domain;
+}
+function getDomainContent(returnContent) {
+// Get the location information from the marketing site
+$.ajax({
+url : "/includes_content/domainSelect/location.html",
+type : "get",
+async: false,
+success : function(data) {
+$("#location_content").html(data);
+var button_link = $("#button_link").text();
+var current_location = $("#current_location").text();
+var location_key = $("#location_key").text();
+//Set the location in the text and button
+$(".text_location").text(current_location);
+$("#domain_select_button").text("Select " + current_location);
+// if the current location is different from the browser location, update the button functionality
+var browser_domain = extractDomain(window.location.href);
+if(button_link.indexOf(browser_domain) == -1) {
+// Get the current page link from the links within the selector
+new_button_link = $("." + location_key).attr("href");
+$("#domain_select_button").attr("href",new_button_link);
+$("#domain_select_button").removeAttr("data-dismiss");
+}
+}
+});
+if(returnContent) {
+return $('#country-unselected').html();
+}
+}
+$(document).ready(function () {
+//setLocation();
+// determine if links need to be rewritten
+if ( $( "#country-unselected li a" ).length ) {
+$("#country-unselected li a").each(function() {
+var link_url = $(this).attr("href").replace(/%26requestedDomain(%3D[^%26|&]*)?|requestedDomain(%3D[^%26|&]*)?(%26)?/, "");
+$(this).attr("href", link_url);
+});
+}
+if ( $( "li.headernav_login > a" ).length ) {
+var login_url = $("li.headernav_login > a").attr("href").replace(/%26requestedDomain(%3D[^%26|&]*)?|requestedDomain(%3D[^%26|&]*)?(%26)?/, "");
+$("li.headernav_login > a").attr("href", login_url);
+}
+if ( $( "li.mwa-nav_logout > a" ).length ) {
+var login_url = $("li.mwa-nav_logout > a").attr("href").replace(/%26requestedDomain(%3D[^%26|&]*)?|requestedDomain(%3D[^%26|&]*)?(%26)?/, "");
+$("li.mwa-nav_logout > a").attr("href", login_url);
+}
+if ( $( ".mwa-nav li a" ).length ) {
+$(".mwa-nav li a").each(function() {
+var link_url = $(this).attr("href").replace(/%26requestedDomain(%3D[^%26|&]*)?|requestedDomain(%3D[^%26|&]*)?(%26)?/, "");
+$(this).attr("href", link_url);
+});
+}
+$('body').on('click','.footernav_country a',function(){
+getDomainContent(false);
+});
+// set the click function for Switzerland/English link
+$('body').on('click','#swiss_english',function(){
+setDomainLanguage('en');
+});
+// set the click function for Switzerland/French link
+$('body').on('click','#swiss_french',function(){
+setDomainLanguage('fr');
+});
+// set the click function for the Switzerland/German link
+$('body').on('click','#swiss_german',function(){
+setDomainLanguage('de');
+});
+});
+// onload functionality for the selector
+$(document).ready(function () {
+if(displayDomainSelector) {
+getDomainContent(false);
+$('#country-unselected').modal('show');
+}
+});
+})(jQuery);
+</script>
+<script src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/satellite-5480c4083639370018670600.js"></script><script src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/s-code-contents-73da148cb454c4f6e395aa8df704854c99540662.js"></script><script type="text/javascript">
+/*T&T Metadata v3 ==>Response Plugin*/
+window.ttMETA=(typeof(window.ttMETA)!="undefined")?window.ttMETA:[];window.ttMETA.push({"CampaignName":"","CampaignId":"","RecipeName":"","RecipeId":"","OfferId":"","OfferName":"","MboxName":"target-global-mbox"});
+</script><script type="text/javascript">
+var test_name= "";
+var tntRecipeName= "";
+</script><style type="text/css" id="ki-w93-wyo"></style><style type="text/css" id="ki-w93-ww2"></style></head>
+  
+<body id="responsive_offcanvas" class="no_animate">
+
+  <!-- Mobile TopNav: Start -->
+<div class="header visible-xs visible-sm" id="header_mobile" translate="no" style="">
+<nav class="navbar navbar-default" role="navigation">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle topnav_toggle" data-toggle="collapse" data-target="#topnav_collapse">
+<span class="sr-only">Toggle Main Navigation</span>
+<span class="icon-menu"></span>
+</button>
+<a href="https://de.mathworks.com/?s_tid=gn_logo" class="svg_link navbar-brand">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/pic-header-mathworks-logo.svg" class="mw_logo" alt="MathWorks">
+</a>
+</div>
+</div>
+</div>
+<div class="row visible-xs visible-sm">
+<div class="col-xs-12">
+<div class="navbar-collapse collapse" id="topnav_collapse">
+<ul class="nav navbar-nav" id="topnav">
+<li class="headernav_login dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+Denis
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li class="mwa-nav_account"><a href="https://de.mathworks.com/mwaccount/?s_tid=gn_myac">Eigener Account</a></li>
+<li class="mwa-nav_associate"><a href="https://de.mathworks.com/licensecenter/workflows/associate_license?s_tid=gn_aslc">Zugeordnete Lizenz</a></li>
+<li class="mwa-nav_community"><a href="https://de.mathworks.com/matlabcentral/profile/authors/my_profile/?s_tid=gn_comm">Mein Community Profil</a></li>
+<li class="mwa-nav_logout"><a href="https://de.mathworks.com/login/logout?uri=http://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html" id="mwa-log_out">Abmelden</a></li>
+</ul>
+</li>
+<li class="topnav_products "><a href="https://de.mathworks.com/products.html?s_tid=gn_ps">Produkte</a></li>
+<li class="topnav_solutions "><a href="https://de.mathworks.com/solutions.html?s_tid=gn_sol">Lösungen</a></li>
+<li class="topnav_academia "><a href="https://de.mathworks.com/academia.html?s_tid=gn_acad">Forschung und Lehre</a></li>
+<li class="topnav_support "><a href="https://de.mathworks.com/support/?s_tid=gn_supp">Support</a></li>
+<li class="topnav_community "><a href="https://de.mathworks.com/matlabcentral/?s_tid=gn_mlc">Community</a></li>
+<li class="topnav_events "><a href="https://de.mathworks.com/company/events.html?s_tid=gn_ev">Veranstaltungen</a></li>
+<li class="headernav_contact"><a href="https://de.mathworks.com/company/aboutus/contact_us.html?s_tid=gn_cntus">Kontakt</a></li>
+<li class="headernav_store"><a href="https://de.mathworks.com/store?s_cid=store_top_nav&amp;s_tid=gn_store">Store</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<!-- Mobile TopNav: End -->
+<!-- Desktop TopNav: Start -->
+<div class="header hidden-xs hidden-sm" id="header_desktop" translate="no">
+<nav class="navbar navbar-default" role="navigation">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div class="collapse navbar-collapse" id="headernav_collapse">
+<ul class="nav navbar-nav navbar-right" id="headernav">
+<li class="headernav_contact"><a href="https://de.mathworks.com/company/aboutus/contact_us.html?s_tid=gn_cntus">Kontakt</a></li>
+<li class="headernav_store"><a href="https://de.mathworks.com/store?s_cid=store_top_nav&amp;s_tid=gn_store">Store</a></li>
+<li class="headernav_login dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+Denis
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li class="mwa-nav_account"><a href="https://de.mathworks.com/mwaccount/?s_tid=gn_myac">Eigener Account</a></li>
+<li class="mwa-nav_associate"><a href="https://de.mathworks.com/licensecenter/workflows/associate_license?s_tid=gn_aslc">Zugeordnete Lizenz</a></li>
+<li class="mwa-nav_community"><a href="https://de.mathworks.com/matlabcentral/profile/authors/my_profile/?s_tid=gn_comm">Mein Community Profil</a></li>
+<li class="mwa-nav_logout"><a href="https://de.mathworks.com/login/logout?uri=http://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html" id="mwa-log_out">Abmelden</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<div class="navbar-header">
+<div class="logo_container hidden-xs hidden-sm">
+<a href="https://de.mathworks.com/?s_tid=gn_logo" class="svg_link pull-left">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/pic-header-mathworks-logo.svg" class="mw_logo" alt="MathWorks">
+</a>
+</div>
+<div class="navbar-collapse collapse hidden-xs hidden-sm">
+<ul class="nav navbar-nav" id="topnav">
+<li class="topnav_products "><a href="https://de.mathworks.com/products.html?s_tid=gn_ps">Produkte</a></li>
+<li class="topnav_solutions "><a href="https://de.mathworks.com/solutions.html?s_tid=gn_sol">Lösungen</a></li>
+<li class="topnav_academia "><a href="https://de.mathworks.com/academia.html?s_tid=gn_acad">Forschung und Lehre</a></li>
+<li class="topnav_support "><a href="https://de.mathworks.com/support/?s_tid=gn_supp">Support</a></li>
+<li class="topnav_community "><a href="https://de.mathworks.com/matlabcentral/?s_tid=gn_mlc">Community</a></li>
+<li class="topnav_events "><a href="https://de.mathworks.com/company/events.html?s_tid=gn_ev">Veranstaltungen</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<!-- Desktop TopNav: End -->
+<!-- Conjoined Header: Start -->
+<div class="sticky_header_container includes_subnav affix">
+<!-- Section Header: Start -->
+<div class="section_header level_3">
+<div class="container-fluid">
+<div class="row" id="mobile_search_row">
+<div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-push-7" id="mobile_search">
+<div class="search_nested_content_container">
+<div id="search_scope_doc" class="collapse in">
+<form id="docsearch_form" name="docsearch_form" method="get" data-release="R2017a" data-language="en" action="../../search.html">
+<div class="input-group tokenized_search_field">
+<label class="sr-only">Search MATLAB Documentation</label>
+<input class="form-control conjoined_search" autocomplete="off" name="qdoc" placeholder="Search R2017a Documentation" id="docsearch" type="text">
+<div class="input-group-btn">
+<button type="button" class="btn btn_search_adjacent dropdown-toggle" data-toggle="dropdown" tabindex="-1"><span class="caret"></span><span class="search_scope_label">Documentation</span></button>
+<ul class="dropdown-menu list-unstyled dropdown-menu-right" role="menu">
+<!-- <li data-toggle="collapse" data-target="#search_scope_doc"><a href="#">Documentation</a></li> -->
+<li data-toggle="collapse" data-target="#search_scope_support" class="doc_search_scope_trigger"><a href="#">Support</a></li>
+<li data-toggle="collapse" data-target="#search_scope_site" class="doc_search_scope_trigger"><a href="#">MathWorks</a></li>
+</ul>
+<script>
+$(".doc_search_scope_trigger").click(function() {
+$("#search_scope_doc").removeClass("in");
+$("#search").val($("#docsearch").val());
+$("#query").val($("#docsearch").val());
+});
+</script>
+<button type="submit" name="submitsearch" id="submitsearch" class="btn icon-search btn_search_adjacent btn_search icon_16" tabindex="-1" disabled="disabled"></button>
+</div>
+</div>
+</form>
+</div>
+<div id="search_scope_support" class="collapse">
+<form id="support_search" action="/support/search_results.html" method="get" accept-charset="utf-8">
+<div class="input-group">
+<label class="sr-only">Search All Support Resources</label>
+<input id="suggestion" name="suggestion" value="" type="hidden">
+<span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+<input id="search" class="form-control conjoined_search" name="q" placeholder="Search All Support Resources" autocomplete="off" type="text">
+<div class="input-group-btn">
+<button type="button" class="btn btn_search_adjacent dropdown-toggle" data-toggle="dropdown" tabindex="-1"><span class="caret"></span><span class="search_scope_label">Support</span></button>
+<ul class="dropdown-menu list-unstyled dropdown-menu-right" role="menu">
+<li data-toggle="collapse" data-target="#search_scope_doc" class="support_search_scope_trigger"><a href="#">Documentation</a></li>
+<!--<li data-toggle="collapse" data-target="#search_scope_support"><a href="#">Support</a></li>-->
+<li data-toggle="collapse" data-target="#search_scope_site" class="support_search_scope_trigger"><a href="#">MathWorks</a></li>
+</ul>
+<script>
+$(".support_search_scope_trigger").click(function() {
+$("#search_scope_support").removeClass("in");
+$("#docsearch").val($("#search").val());
+$("#query").val($("#search").val());
+});
+</script>
+<button type="submit" name="submitsearch" id="support_submitsearch" class="btn icon-search btn_search_adjacent btn_search icon_16" tabindex="-1"></button>
+</div>
+</div>
+</form>
+</div>
+<div id="search_scope_site" class="collapse">
+<form name="search" id="site_search" class="site_search" action="/search/site_search.html" method="get">
+<div class="input-group">
+<label class="sr-only">MathWorks-Suche</label>
+<input name="c[]" value="entire_site" type="hidden">
+<input name="q" id="query" class="form-control conjoined_search" placeholder="MathWorks-Suche" autocomplete="off" \="" type="text">
+<div class="input-group-btn">
+<button type="button" class="btn btn_search_adjacent dropdown-toggle" data-toggle="dropdown" tabindex="-1"><span class="caret"></span><span class="search_scope_label">MathWorks</span></button>
+<ul class="dropdown-menu list-unstyled dropdown-menu-right" role="menu">
+<li data-toggle="collapse" data-target="#search_scope_doc" class="site_search_scope_trigger"><a href="#">Documentation</a></li>
+<li data-toggle="collapse" data-target="#search_scope_support" class="site_search_scope_trigger"><a href="#">Support</a></li>
+<!--<li data-toggle="collapse" data-target="#search_scope_site" class="support_search_scope_trigger"><a href="#">MathWorks</a></li>-->
+</ul>
+<script>
+$(".site_search_scope_trigger").click(function() {
+$("#search_scope_site").removeClass("in");
+$("#search").val($("#query").val());
+$("#docsearch").val($("#query").val());
+});
+</script>
+<button type="submit" id="searchbutton" class="btn icon-search btn_search_adjacent btn_search icon_16" tabindex="-1"></button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<button class="btn icon-remove btn_search pull-right icon_32 visible-xs" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button>
+</div>
+<div class="col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5" id="section_header_title">
+<div class="section_header_content">
+<div class="section_header_title add_cursor_pointer">
+<h1>Documentation</h1>
+</div>
+</div>
+</div>
+<div class="visible-xs" id="search_actuator">
+<button class="btn icon-search btn_search pull-right icon_16" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button>
+</div>
+</div>
+<script>
+$(".section_header_title").click(function(){
+$(window.location).attr('href', '/help');
+});
+</script>
+<!-- Section Header: End -->
+<!-- Mobile Local Nav: Start -->
+<!-- Mobile Local Nav: End -->
+</div>
+</div>
+<!-- Horo Nav: Start -->
+<div class="horizontal_nav">
+<div class="horizontal_nav_container">
+<div class="offcanvas_actuator active" data-toggle="offcanvas" data-target="#sidebar" id="nav_toggle">
+<button type="button" class="btn">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-menu"></span>
+</button>
+<span class="offcanvas_actuator_label" id="translation_icon-menu" tabindex="0"></span>
+<span class="offcanvas_actuator_close" tabindex="0"></span>
+</div>
+<div class="offcanvas_horizontal_nav">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 hidden-xs hidden-sm">
+<div class="cta_box">
+<ul class="list-inline">
+<li class="cta_item cta_item_general"><a href="https://de.mathworks.com/programs/bounce/doc_tryit.html" class="icon-download">Trials</a></li>
+<li class="cta_item cta_item_general"><a href="https://de.mathworks.com/support/web_downloads_bounce.html?s_cid=1008_degr_docdn_270055" class="icon-download">Product Updates</a></li>
+<li class="cta_item cta_item_general"><a href="#" class="icon-chat" data-toggle="modal" data-target="#translation_modal">Translate This Page</a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Horo Nav: End -->
+</div>
+<!-- Conjoined Header: End -->
+
+  <div class="row-offcanvas row-offcanvas-left active">
+  
+    <div class="sidebar-offcanvas" id="sidebar" role="navigation">
+      <nav class="offcanvas_nav" role="navigation">
+          <ul xmlns:atict="http://www.arbortext.com/namespace/atict" class="nav_breadcrumb">
+<li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="https://de.mathworks.com/help/index.html" itemprop="url"><span itemprop="title">Documentation Home</span></a></li>
+</ul>
+
+<ul xmlns:atict="http://www.arbortext.com/namespace/atict" class="nav_disambiguation">
+<li class="product"><a href="https://de.mathworks.com/help/stateflow/index.html">Stateflow</a>
+<div class="dropdown">
+<span class="icon-arrow-down icon_16" id="dropdownMenu1" data-toggle="dropdown"></span>
+<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+<li role="presentation"><a role="menuitem" tabindex="-1" href="https://de.mathworks.com/help/stateflow/examples.html?s_cid=doc_flyout">Examples</a></li>
+<li role="presentation"><a role="menuitem" tabindex="-1" href="https://de.mathworks.com/help/stateflow/blocklist.html?s_cid=doc_flyout">Blocks and Other Reference</a></li>
+<li role="presentation"><a role="menuitem" tabindex="-1" href="https://de.mathworks.com/help/stateflow/release-notes.html?s_cid=doc_flyout">Release Notes</a></li>
+<li role="presentation"><a role="menuitem" tabindex="-1" href="https://de.mathworks.com/help/pdf_doc/stateflow/index.html?s_cid=doc_flyout">PDF Documentation</a></li>
+</ul>
+</div>
+</li>
+<li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="https://de.mathworks.com/help/stateflow/complex-logic.html" itemprop="url"><span itemprop="title">Design Complex Logic</span></a></li>
+<li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="https://de.mathworks.com/help/stateflow/decision-logic.html" itemprop="url"><span itemprop="title">Decision Logic</span></a></li>
+</ul>
+<ul xmlns:atict="http://www.arbortext.com/namespace/atict" class="nav_disambiguation">
+<li><a href="https://de.mathworks.com/help/stateflow/index.html">Stateflow</a>
+</li>
+<li><a href="https://de.mathworks.com/help/stateflow/complex-logic.html" itemprop="url">Design Complex Logic</a></li>
+</ul>
+<ul xmlns:atict="http://www.arbortext.com/namespace/atict" class="nav_scrollspy nav">
+<li class="nav_scrollspy_function"><a href="#responsive_offcanvas">Create Flow Charts with the Pattern Wizard</a></li>
+<li class="nav_scrollspy_title">On this page</li>
+
+<li class=""><a href="#brt9dy4" class="intrnllnk">Why Use the Pattern Wizard?</a></li>
+<li class=""><a href="#brsvfkl" class="intrnllnk">How to Create Reusable Flow Charts</a></li>
+<li class=""><a href="#btwfvev" class="intrnllnk">Insert a Logic Pattern Using the Pattern Wizard</a>
+<ul class="nav">
+<li class=""><a href="#btwojye" class="intrnllnk">Insert a Pattern</a></li>
+</ul>
+</li>
+<li class=""><a href="#brsvfu3" class="intrnllnk">Save and Reuse Flow Chart Patterns</a>
+<ul class="nav">
+<li class=""><a href="#bruabwy" class="intrnllnk">Guidelines for Creating a Pattern Folder</a></li>
+<li class=""><a href="#bruactp" class="intrnllnk">How to Save Flow Chart Patterns for Easy Retrieval</a></li>
+<li class=""><a href="#brt_u9_" class="intrnllnk">How to Change Your Pattern Folder</a></li>
+<li class=""><a href="#brt_wl_" class="intrnllnk">How to Add Flow Chart Patterns in Graphical Functions</a></li>
+<li class=""><a href="#brt_wp1" class="intrnllnk">How to Add Flow Chart Patterns in Charts</a></li>
+</ul>
+</li>
+<li class=""><a href="#brsck1o" class="intrnllnk">MAAB-Compliant Patterns from the Pattern Wizard</a>
+<ul class="nav">
+<li class=""><a href="#brsck6e" class="intrnllnk">Decision Logic Patterns in Flow Charts</a></li>
+<li class=""><a href="#brsvefx" class="intrnllnk">Iterative Loop Patterns in Flow Charts</a></li>
+<li class=""><a href="#br8hj8l" class="intrnllnk">Switch Patterns in Flow Charts</a></li>
+</ul>
+</li>
+<li class="active"><a href="#bruc79z" class="intrnllnk">Create and Reuse a Custom Pattern with the Pattern Wizard</a>
+<ul class="nav">
+<li><a href="#brudb4m" class="intrnllnk">Create the Upper Triangle Iterator Pattern</a></li>
+<li><a href="#brug3xr" class="intrnllnk">Save the Upper Triangle Iterator Pattern for Reuse</a></li>
+<li><a href="#brug7ab" class="intrnllnk">Add the Upper Triangle Iterator Pattern to a Graphical Function</a></li></ul>
+
+      </li></ul></nav>
+      <script src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/offcanvas.js"></script>
+    </div>
+
+    <!-- MOBILE CTA - Begin -->
+    <!-- MOBILE CTA - End -->
+
+
+    <div class="content_container" id="content_container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+              
+
+
+
+
+
+
+           
+     
+    
+           
+<div id="TranslationIsOn">
+  <div class="alert alert-info"> <span class="alert_icon icon-alert-info-reverse"></span>
+    <h3>This is machine translation</h3>
+      <p></p><div translate="no"> 
+    	  Translated by <a href="http://aka.ms/MicrosoftTranslatorAttribution" target="_blank"> <img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/msft_logo.png" alt="Microsoft" style="height:auto; width:100px; margin-top:-3px; display:inline-block;"> </a>
+    	  <span id="counter" style="color:red"> </span>
+         </div>
+         Mouseover text to see original. Click the button below to return to the English verison of the page.
+      <p></p>
+      <p></p><div id="ja_translation_exist"> <font size="2">
+    	 	Note: This page has been translated by <span translate="no">MathWorks</span>. <a href="" id="jaLink">Please click here</a> <br>
+            To view all translated materals including this page, select 
+Japan from the country navigator on the bottom of this page. </font>
+    	</div>
+      <p></p>
+    <button type="button" id="pageBack" translate="no" onclick="history.go(0);" class="btn btn-sm btn_secondary pull-right"> Back to English </button>
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+<!-- Translation Modal: START -->
+<div class="modal fade" id="translation_modal" tabindex="-1" role="dialog" aria-labelledby="translation_modal_label" translate="no">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h3 class="modal-title" id="translation_modal_label">Translate This Page</h3>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <select name="to" id="target-language" class="form-control"> 
+            <option value="languages" disabled="disabled">Select Language</option>
+            <option value="bg">Bulgarian</option>
+            <option value="ca">Catalan</option>
+            <option value="zh-CHS">Chinese Simplified</option>
+            <option value="zh-CHT">Chinese Traditional</option>
+            <option value="cs">Czech</option>
+            <option value="da">Danish</option>
+            <option value="nl">Dutch</option>
+            <option value="en">English</option>
+            <option value="et">Estonian</option>
+            <option value="fi">Finnish</option>
+            <option value="fr">French</option>
+            <option value="de" selected="selected">German</option>
+            <option value="el">Greek</option>
+            <option value="ht">Haitian Creole</option>
+            <option value="hi">Hindi</option>
+            <option value="mww">Hmong Daw</option>
+            <option value="hu">Hungarian</option>
+            <option value="id">Indonesian</option>
+            <option value="it">Italian</option>
+            <option value="ja">Japanese</option>
+            <option value="ko">Korean</option>
+            <option value="lv">Latvian</option>
+            <option value="lt">Lithuanian</option>
+            <option value="ms">Malay</option>
+            <option value="mt">Maltese</option>
+            <option value="no">Norwegian</option>
+            <option value="pl">Polish</option>
+            <option value="pt">Portuguese</option>
+            <option value="ro">Romanian</option>
+            <option value="ru">Russian</option>
+            <option value="sk">Slovak</option>
+            <option value="sl">Slovenian</option>
+            <option value="es">Spanish</option>
+            <option value="sv">Swedish</option>
+            <option value="th">Thai</option>
+            <option value="tr">Turkish</option>
+            <option value="uk">Ukrainian</option>
+            <option value="vi">Vietnamese</option>
+            <option value="cy">Welsh</option>
+          </select>
+        </div>
+        <small class="add_font_color_general">
+        <p class="add_margin_5"><strong>MathWorks Machine Translation</strong></p>
+        <p>The automated translation of this page is provided by a general purpose third party translator tool.</p>
+        <p>MathWorks does not warrant, and disclaims all liability for, 
+the accuracy, suitability, or fitness for purpose of the translation.</p>
+        </small> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="translateBtn" onclick="thisPageTranslate()">Translate</button>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  html body { /*overflow-y:visible;*/ }
+  #TranslationIsOn { display:none; }
+</style>
+
+<script>
+	    
+  function thisPageTranslate() {
+  	
+    var targetLanguage = $("#target-language option:selected").val();
+    $('#ja_translation_exist').hide();
+    
+    if (targetLanguage == "ja") {
+    	  var enURL = window.location.href;
+    	  var ja_JP_File = enURL.replace(".html", "_ja_JP.html");
+    	  
+    	  $.ajax({
+    			type: 'HEAD',
+    			url: ja_JP_File,
+    			success: function() {
+    					var ja_JP_URL = enURL.replace(".html", ".html?lang=ja_JP");
+    			    $('#jaLink').prop('href', ja_JP_URL);
+        			$('#ja_translation_exist').show();
+				}
+		  });
+    }
+    
+    $('#translation_modal').modal('hide');
+    $(".icon-chat").hide();
+   
+    var script = document.createElement('script')
+		script.type = "text/javascript";
+		script.src = "https://www.microsoftTranslator.com/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ctf=False&ui=true&settings=Manual&from=en";
+		
+    script.onload = function() {
+      	Microsoft.Translator.Widget.Translate('en', targetLanguage, onProgress, null, onComplete);
+      }
+      
+    $("head")[0].appendChild(script);
+    		
+    if (targetLanguage !== "en") {
+    	 $("#TranslationIsOn").toggle();
+    }
+    else {
+    	 $("#TranslationIsOn").toggle();
+    }
+  }
+  
+  function onProgress(value) {
+       document.getElementById('counter').innerHTML = Math.round(value) + "%";
+  }
+
+  function onComplete() {
+       $("#counter").hide();
+  }
+  
+$('#target-language').on('change', function() {
+    $('#translateBtn').prop('disabled', false);
+});
+
+  function setTargetLangBasedLocale() {
+   	var locale = (navigator.language || navigator.userLanguage).toLowerCase();
+   	var localeLang = locale.split('-',1);
+    var num_langOptions = document.getElementById("target-language").length; 
+       
+    //default lang is set based on navigator's locale. If locale is English or no match found, set as "Select Language". 
+    
+    if (localeLang != "en") {
+    		var i = 0;
+  	    while (i<num_langOptions) {
+  		      var lang = document.getElementById("target-language").options[i].value; 
+  			    if ((lang == localeLang && localeLang != "zh") ||(lang == "zh-CHS" && locale == "zh-cn") || (lang == "zh-CHT" && locale == "zh-tw")) {
+  				 	    document.getElementById("target-language").options[i].selected = true;
+  				 	    break;
+  			    }
+  			    i++;
+  	    }
+  	  }
+  	  
+  	if ($("#target-language option:selected").val() == "languages")
+  		$('#translateBtn').prop('disabled', true);
+
+  } // setTargetLangBasedLocale
+
+  $(document).ready(function() {
+    $(".cta_box .list-inline").append('<li class="cta_item cta_item_general"><a href="#" class="icon-chat" data-toggle="modal" data-target="#translation_modal">Translate This Page</a></li>');
+    setTargetLangBasedLocale();
+  });
+</script>
+<style>
+  #WidgetFloaterPanels { display:none !important; }
+</style>
+<!-- Translation Modal: END --> 
+             
+<section id="doc_center_content" lang="en"><div id="pgtype-topic">
+  
+
+<span id="brscheg" class="anchor_target"></span><h2 class="title r2017a" itemprop="title content" id="brscheg">Create Flow Charts with the Pattern Wizard</h2><span id="pattern_wizard" class="anchor_target"></span><a class="indexterm" name="zmw57dd0e12635"></a><a class="indexterm" name="zmw57dd0e12640"></a><div class="clearfix"></div><div itemprop="content"><span id="brt9dy4" class="anchor_target"></span><h3 class="title" id="brt9dy4">Why Use the Pattern Wizard?</h3><p>The Pattern Wizard is a utility that generates common flow chart
+patterns for use in graphical functions and charts. Although you can
+also create flow charts by hand, the Pattern Wizard offers several
+advantages:</p><ul type="disc"><li><p>Generates common logic and iterative loop patterns
+automatically</p></li><li><p>Generates patterns that comply with guidelines from
+the MathWorks Automotive Advisory Board (MAAB)</p></li><li><p>Promotes consistency in geometry and layout across
+patterns</p></li><li><p>Facilitates storing and reusing patterns from a central
+location</p></li><li><p>Provides ability to insert patterns in existing flow
+graph</p></li></ul><ul><span id="zmw57dd0e12667" class="anchor_target"></span><table class="note table table-condensed table-bordered" summary="Note"><tbody><tr width="90%"><td><p><b>Note:</b>&nbsp;&nbsp;
+
+
+The Pattern Wizard is only used for flow charts, and cannot
+be used to save states and subcharts. Atomic subcharts can be used
+to reuse states and subcharts.</p></td></tr></tbody></table></ul></div><div class="clearfix"></div><div itemprop="content"><span id="brsvfkl" class="anchor_target"></span><h3 class="title" id="brsvfkl">How to Create Reusable Flow Charts</h3><p>When you create flow charts with the Pattern Wizard, you can
+save them to a central location where you can retrieve them for reuse.
+To create reusable flow charts that comply with MAAB guidelines:</p><ol type="1"><li><p>Open a chart.</p><p><a href="#" onclick="return toggleexpander('zmw57dd0e12679_block','zmw57dd0e12679_expandable_text');"><img style="border:0;" id="zmw57dd0e12679_expandable_text" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/arrow_right.gif"></a>&nbsp;<a href="#" onclick="return toggleexpander('zmw57dd0e12679_block','zmw57dd0e12679_expandable_text');">How do I create and open a new Stateflow chart?</a></p>
+<div class="expander" style="display:none; padding-left:4px;" id="zmw57dd0e12679_block">
+<ol type="a"><li><p>Type <a href="https://de.mathworks.com/help/stateflow/ref/sfnew.html"><code>sfnew</code></a> or <a href="https://de.mathworks.com/help/stateflow/ref/stateflow.html"><code>stateflow</code></a> at the MATLAB<sup>®</sup> command
+prompt.</p><p>A model opens, containing an empty chart.</p></li><li><p>Double-click the chart to open it.</p></li></ol>
+</div>
+</li><li><p>Select a flow chart pattern:</p><div class="table-responsive"><table class="table table-condensed" border="2"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr valign="top"><th valign="top">To Create:</th><th valign="top">Select:</th><th valign="top">Reference</th></tr>
+</thead><tbody><tr valign="top"><td><code>if</code> decision patterns</td><td><b>Chart</b> &gt; <b>Add
+Pattern in Chart</b> &gt; <b>Decision</b></td><td><p><a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#brsck6e" class="intrnllnk">Decision Logic Patterns in Flow Charts</a></p></td></tr>
+<tr valign="top"><td><code>for</code>-, <code>while</code>-, and <code>do</code>-<code>while</code>-loop
+patterns</td><td><b>Chart</b> &gt; <b>Add
+Pattern in Chart</b> &gt; <b>Loop</b></td><td><p><a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#brsvefx" class="intrnllnk">Iterative Loop Patterns in Flow Charts</a></p></td></tr>
+<tr valign="top"><td><code>switch</code> patterns</td><td><b>Chart</b> &gt; <b>Add
+Pattern in Chart</b> &gt; <b>Switch</b></td><td><p><a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#br8hj8l" class="intrnllnk">Switch Patterns in Flow Charts</a></p></td></tr>
+</tbody></table></div><p></p><p>The Stateflow<sup>®</sup> Patterns dialog box appears.</p></li><li><p>Enter a description of your pattern (optional).</p></li><li><p>Specify conditions and actions (optional).</p><p>You can also add or change conditions and actions directly in
+the chart.</p></li><li><p>Click <b>OK</b>.</p><p>The pattern appears in your chart. The geometry and layout comply
+with MAAB guidelines.</p></li><li><p>Customize the pattern as desired.</p><p>For example, you may want to add or change flow charts, conditions,
+or actions. See <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#bruc79z" class="intrnllnk">Create and Reuse a Custom Pattern with the Pattern Wizard</a>.</p></li><li><p>Save the pattern to a central location as described
+in <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#brsvfu3" class="intrnllnk">Save and Reuse Flow Chart Patterns</a>.</p></li></ol><p>You can now retrieve your pattern directly from the editor to
+reuse in graphical functions and charts. See <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#brt_wl_" class="intrnllnk">How to Add Flow Chart Patterns in Graphical Functions</a> and <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#brt_wp1" class="intrnllnk">How to Add Flow Chart Patterns in Charts</a>.</p></div><div class="clearfix"></div><div itemprop="content"><span id="btwfvev" class="anchor_target"></span><h3 class="title" id="btwfvev">Insert a Logic Pattern Using the Pattern Wizard</h3><p>Using the Pattern Wizard, you can add loop or decision logic
+extensions to a previously created pattern in a flow chart. Select
+an eligible vertical transition, and then select <b>Chart</b> &gt; <b>Insert Pattern on Selection</b>. After you select one of the decision or loop patterns,
+the Pattern Wizard places the new pattern below the action along the
+transition path.</p><p>When you create logic extensions, the following rules apply:</p><ul type="disc"><li><p>Select only one exactly vertical transition to extend
+at a time.</p></li><li><p>Select a vertical transition that has a destination
+junction.</p></li><li><p>Extend only a flow chart that was created by the Pattern
+Wizard.</p></li><li><p>Extend only a flow chart that has junctions and transitions
+in the chart, not other objects.</p></li><li><p>Do not extend a pattern that has been custom-created
+or modified.</p></li><li><p>You cannot choose a custom pattern as the extension.</p></li></ul><p>If your selection is not eligible, when you select <b>Chart</b> &gt; <b>Insert Pattern on Selection</b>, you see a message instead of pattern options. </p><div class="table-responsive"><table class="table table-condensed" border="2"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr valign="top"><th valign="top">Message</th><th valign="top">Issue</th></tr>
+</thead><tbody><tr valign="top"><td>Select a vertical transition</td><td>You have not selected a vertical transition.</td></tr>
+<tr valign="top"><td>Selected transition must be exactly vertical</td><td>You selected a transition, but it is not vertical.</td></tr>
+<tr valign="top"><td>Select only one vertical transition</td><td>You have selected more than one transition.</td></tr>
+<tr valign="top"><td>Editor must contain only transitions and junctions</td><td>There are other objects, such as states, functions or truth
+tables in the editor. </td></tr>
+</tbody></table></div><p></p><span id="btwojye" class="anchor_target"></span><h4 class="title" id="btwojye">Insert a Pattern</h4><p> In this example, you add an <code>if-else</code> pattern
+into a <code>while</code>-loop body. </p><ol type="1"><li><p>Open a chart.</p></li><li><p>Select <b>Chart</b> &gt; <b>Add Pattern in Chart</b> &gt; <b>Loop</b> &gt; <b>While</b>.</p></li><li><p>Enter a description of your pattern (optional).</p></li><li><p>Specify conditions and actions (optional).</p><p>You can also add or change conditions and actions directly in
+the chart.</p></li><li><p>Click <b>OK</b>.</p><p>The <code>while</code> pattern appears in your chart. </p><p class="listimage">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/while.png" alt="" width="188" height="224"></p></li><li><p>Select the vertical transition labeled <code>{action1}</code>. </p></li><li><p>Select <b>Chart</b> &gt; <b>Insert Pattern on Selection</b> &gt; <b>Decision</b> &gt; <b>If-Else</b>. </p></li><li><p>Click <b>OK</b>.</p><p>The <code>if-else</code> pattern is added to the <code>while</code>-loop
+below <code>{action1}</code>. </p><p class="listimage">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/while_nested_if_else.png" alt="" width="434" height="469"></p></li></ol></div><div class="clearfix"></div><div itemprop="content"><span id="brsvfu3" class="anchor_target"></span><h3 class="title" id="brsvfu3">Save and Reuse Flow Chart Patterns</h3><p>Using the Pattern Wizard, you can save flow chart patterns in
+a central location, then easily retrieve and reuse them in Stateflow graphical
+functions and charts.  The Pattern Wizard lets you access all saved
+patterns from the editor.</p><span id="bruabwy" class="anchor_target"></span><h4 class="title" id="bruabwy">Guidelines for Creating a Pattern Folder</h4><p>The Pattern Wizard uses a single, flat folder for saving and
+retrieving flow chart patterns. Follow these guidelines when creating
+your pattern folder:</p><ul type="disc"><li><p>Store all flow charts at the top level of the pattern
+folder; do not create subfolders.</p></li><li><p>Make sure all flow chart files have a <code>.mdl</code> or <code>.slx</code> extension.</p></li></ul><span id="bruactp" class="anchor_target"></span><h4 class="title" id="bruactp">How to Save Flow Chart Patterns for Easy Retrieval</h4><ol type="1"><li><p>Create a folder for storing your patterns according
+to <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#bruabwy" class="intrnllnk">Guidelines for Creating a Pattern Folder</a>.</p></li><li><p>In your chart, select flow charts with the patterns
+you want to save.</p></li><li><p>Select <b>Chart</b> &gt; <b>Save Pattern</b>.</p><p>The Pattern Wizard displays a message that prompts you to choose
+a folder for storing custom patterns.</p><p>The Pattern Wizard stores your flow charts in the pattern folder
+as a model file. The patterns that you save in this folder appear
+in a drop-down list when you select <b>Chart</b> &gt; <b>Add Pattern in Chart</b> &gt; <b>Custom</b>, as described in <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#brt_wl_" class="intrnllnk">How to Add Flow Chart Patterns in Graphical Functions</a> and <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#brt_wp1" class="intrnllnk">How to Add Flow Chart Patterns in Charts</a>.</p></li><li><p>Click <b>OK</b> to dismiss the message.</p><p>The Browse For Folder dialog box appears.</p></li><li><p>Select the designated folder (or create a new folder)
+and click <b>OK</b>.</p><p>The Save Pattern As dialog box appears.</p></li><li><p>Enter a name for your pattern and click <b>Save</b>.</p><p>The Pattern Wizard saves your pattern as a model file in the
+designated folder.</p></li></ol><span id="brt_u9_" class="anchor_target"></span><h4 class="title" id="brt_u9_">How to Change Your Pattern Folder</h4><ol type="1"><li><p>Rename your existing pattern folder.</p></li><li><p>Add a pattern as described in <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#brt_wl_" class="intrnllnk">How to Add Flow Chart Patterns in Graphical Functions</a> or <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#brt_wp1" class="intrnllnk">How to Add Flow Chart Patterns in Charts</a>.</p><p>The Pattern Wizard prompts you to choose a folder.</p></li><li><p>Follow the instructions in <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#bruactp" class="intrnllnk">How to Save Flow Chart Patterns for Easy Retrieval</a>.</p></li></ol><span id="brt_wl_" class="anchor_target"></span><h4 class="title" id="brt_wl_">How to Add Flow Chart Patterns in Graphical Functions</h4><ol type="1"><li><p>Add a graphical function to your chart.</p><p>See <a href="https://de.mathworks.com/help/stateflow/ug/define-a-graphical-function.html#f9-59156">Create a Graphical Function</a>.</p></li><li><p>Make the graphical function into a subchart by right-clicking
+in the function box and selecting <b>Group &amp;
+Subchart</b> &gt; <b>Subchart</b>.</p><p>The function box turns gray.</p></li><li><p>Double-click the subcharted graphical function to
+open it.</p></li><li><p>In the menu bar, select <b>Chart</b> &gt; <b>Add Pattern in Function</b> &gt; <b>Custom</b>.</p><p>The Select a Custom Pattern dialog box appears, displaying all
+of your saved patterns.</p><p><a href="#" onclick="return toggleexpander('zmw57dd0e13136_block','zmw57dd0e13136_expandable_text');"><img style="border:0;" id="zmw57dd0e13136_expandable_text" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/arrow_right.gif"></a>&nbsp;<a href="#" onclick="return toggleexpander('zmw57dd0e13136_block','zmw57dd0e13136_expandable_text');">Why does my dialog box not display any patterns?</a></p>
+<div class="expander" style="display:none; padding-left:4px;" id="zmw57dd0e13136_block">
+<p>You have not saved any patterns for the Pattern Wizard to retrieve.
+See <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#brsvfu3" class="intrnllnk">Save and Reuse Flow Chart Patterns</a>.</p>
+</div>
+</li><li><p>Select a pattern from the list in the dialog box and
+click <b>OK</b>.</p><p>The pattern appears in the graphical function, which expands
+to fit the flow chart.</p></li><li><p>Define all necessary inputs, outputs, and local data
+in the graphical function and the chart that calls it.</p></li></ol><span id="brt_wp1" class="anchor_target"></span><h4 class="title" id="brt_wp1">How to Add Flow Chart Patterns in Charts</h4><ol type="1"><li><p>In the menu bar, select <b>Chart</b> &gt; <b>Add Pattern in Chart</b> &gt; <b>Custom</b>.</p><p>The Select a Custom Pattern dialog box appears, displaying all
+of your saved patterns.</p></li><li><p>Select a pattern from the list in the dialog box and
+click <b>OK</b>.</p><p>The pattern appears in the chart.</p></li><li><p>Adjust the chart by hand to:</p><ul type="disc"><li><p>Connect the flow charts to the appropriate transitions.</p></li><li><p>Ensure that there is only one default transition for
+exclusive (OR) states at each level of hierarchy.</p></li><li><p>Define all necessary inputs, outputs, and local data.</p></li></ul></li></ol></div><div class="clearfix"></div><div itemprop="content"><span id="brsck1o" class="anchor_target"></span><h3 class="title" id="brsck1o">MAAB-Compliant Patterns from the Pattern Wizard</h3><p>The Pattern Wizard generates MAAB-compliant flow charts.</p><span id="brsck6e" class="anchor_target"></span><h4 class="title" id="brsck6e">Decision Logic Patterns in Flow Charts</h4><p>The Pattern Wizard generates the following MAAB-compliant decision
+logic patterns:</p><span id="bru7_ty" class="anchor_target"></span><p class="title"><b>if</b></p><p>
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/if.png" alt="" width="146" height="147"></p><span id="bru7_21" class="anchor_target"></span><p class="title"><b>if-else</b></p><p>
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/if_else.png" alt="" width="176" height="176"></p><span id="bru7_4p" class="anchor_target"></span><p class="title"><b>if-elseif</b></p><p>
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/if_elseif.png" alt="" width="268" height="298"></p><span id="bru7_5z" class="anchor_target"></span><p class="title"><b>if-elseif-else</b></p><p>
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/if_elseif_else.png" alt="" width="268" height="298"></p><span id="bru7_7a" class="anchor_target"></span><p class="title"><b>if-elseif-elseif-else</b></p><p>
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/if_elseif_elseif_else.png" alt="" width="345" height="335"></p><span id="bru7_8f" class="anchor_target"></span><p class="title"><b>Nested if</b></p><p>
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/nested_if.png" alt="" width="275" height="261"></p><span id="brsvefx" class="anchor_target"></span><h4 class="title" id="brsvefx">Iterative Loop Patterns in Flow Charts</h4><p>The Pattern Wizard generates the following MAAB-compliant iterative
+loop patterns:</p><span id="bru7_93" class="anchor_target"></span><p class="title"><b>for</b></p><p>
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/for.png" alt="" width="265" height="202"></p><span id="bru8aaf" class="anchor_target"></span><p class="title"><b>while</b></p><p>
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/while1.png" alt="" width="188" height="224"></p><span id="bru8aay" class="anchor_target"></span><p class="title"><b>do-while</b></p><p>
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/do_while.png" alt="" width="167" height="208"></p><span id="br8hj8l" class="anchor_target"></span><h4 class="title" id="br8hj8l">Switch Patterns in Flow Charts</h4><p>The Pattern Wizard generates the following MAAB-compliant switch
+patterns:</p><span id="br8hkar" class="anchor_target"></span><p class="title"><b>switch with two cases and default</b></p><p>
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/switch_two_case_and_default.png" alt="" width="293" height="401"></p><span id="br8hkaz" class="anchor_target"></span><p class="title"><b>switch with three cases and default</b></p><p>
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/switch_three_case_and_default.png" alt="" width="293" height="497"></p><span id="br8hka5" class="anchor_target"></span><p class="title"><b>switch with four cases and default</b></p><p>
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/switch_four_case_and_default.png" alt="" width="293" height="580"></p></div><div class="clearfix"></div><div itemprop="content"><span id="bruc79z" class="anchor_target"></span><h3 class="title" id="bruc79z">Create and Reuse a Custom Pattern with the Pattern Wizard</h3><p>This example shows how to create, modify, and save a custom
+flow chart pattern for iterating over the upper triangle of a two-dimensional
+matrix. In the upper triangle, the row index <i class="inlinemath"><em>i</em></i> is
+always less than or equal to column index <i class="inlinemath"><em>j</em></i>. This
+flow chart pattern uses nested <code>for</code>-loops to ensure
+that <i class="inlinemath"><em>i</em></i> never exceeds <i class="inlinemath"><em>j</em></i>.</p><span id="brudb4m" class="anchor_target"></span><h4 class="title" id="brudb4m">Create the Upper Triangle Iterator Pattern</h4><ol type="1"><li><p>Open a new (empty) chart.</p></li><li><p>Select <b>Chart</b> &gt; <b>Add Pattern in Chart</b> &gt; <b>Loop</b> &gt; <b>For</b>.</p></li><li><p>In the Stateflow Patterns dialog box, enter the
+initializer, loop test, and counting expressions for iterating through
+the first dimension of the matrix, as follows:</p><p class="listimage">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/ex_iterator_loop1_params.png" alt="" width="185" height="272"></p><p>Do not specify an action yet. You will add another loop for
+iterating the second dimension of the matrix.</p></li><li><p>Click <b>OK</b>.</p><p>The Pattern Wizard generates the first iterative loop in your
+chart.</p><p class="listimage">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/ex_iterator_loop1.png" alt="" width="278" height="212"></p><p>This pattern:</p><ul type="disc"><li><p>Conforms to all best practices for creating flow charts,
+as described in <a href="https://de.mathworks.com/help/stateflow/ug/best-practices-for-creating-flow-graphs.html">Best Practices for Creating Flow Charts</a>.</p></li><li><p>Provides the correct syntax for conditions and condition
+actions.</p></li></ul></li><li><p>Add the second loop:</p><ol type="a"><li><p>Expand the editor window so the chart can accommodate
+a second pattern.</p></li><li><p>Select the vertical transition labelled <code>{action1}</code>.</p></li><li><p>Select <b>Chart</b> &gt; <b>Insert Pattern on Selection</b> &gt; <b>Loop</b> &gt; <b>For</b>.</p></li><li><p>Enter the initializer, loop test, and counting expressions
+for the second iterator <code>j</code>, and a placeholder for
+an action to retrieve each element in the upper triangle as follows:</p><p class="listimage">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/ex_iterator_loop2_params.png" alt="" width="185" height="272"></p></li><li><p>Click <b>OK</b>. The Pattern Wizard
+adds the second loop to the first loop.</p><p class="listimage">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/ex_iterator_loop1_and_2_nocleanup.png" alt="" width="549" height="390"></p></li></ol></li><li><p>Save your chart.</p></li></ol><p>Save your pattern to a central location for reuse (see <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#brug3xr" class="intrnllnk">Save the Upper Triangle Iterator Pattern for Reuse</a>).</p><span id="brug3xr" class="anchor_target"></span><h4 class="title" id="brug3xr">Save the Upper Triangle Iterator Pattern for Reuse</h4><ol type="1"><li><p>Create a folder for storing flow chart patterns, as
+described in <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#bruabwy" class="intrnllnk">Guidelines for Creating a Pattern Folder</a>.</p></li><li><p>Open the chart that contains the custom pattern.</p></li><li><p>In the chart, select the flow chart with the pattern
+that you want to save.</p></li><li><p>In the editor, select <b>Chart</b> &gt; <b>Save Pattern</b> and take one
+of these actions.</p><div class="table-responsive"><table class="table table-condensed" border="2"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr valign="top"><th valign="top">If you have...</th><th valign="top">Then
+Pattern Wizard...</th><th valign="top">Action</th></tr>
+</thead><tbody><tr valign="top"><td>Not yet designated the pattern folder</td><td>Prompts you to create or select a pattern folder</td><td>Select the folder you just created. See <a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html#bruactp" class="intrnllnk">How to Save Flow Chart Patterns for Easy Retrieval</a>.</td></tr>
+<tr valign="top"><td>Already designated the pattern folder</td><td>Prompts you to save your pattern to the designated folder</td><td>Name your pattern and click <b>Save</b>.</td></tr>
+</tbody></table></div><p></p><p>The Pattern Wizard automatically saves your pattern as a model
+file under the name that you specify.</p></li></ol><span id="brug7ab" class="anchor_target"></span><h4 class="title" id="brug7ab">Add the Upper Triangle Iterator Pattern to a Graphical Function</h4><ol type="1"><li><p>Open a new chart.</p></li><li><p>Drag a graphical function into the chart from the
+object palette. </p></li><li><p>Enter the following function signature:</p><div class="code_responsive"><pre class="programlisting">function y = ut_iterator(u, numrow, numcol)</pre></div><p>The function takes three inputs.</p><div class="table-responsive"><table class="table table-condensed" border="2"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr valign="top"><th valign="top">Input</th><th valign="top">Description</th></tr>
+</thead><tbody><tr valign="top"><td><code><i class="inlinemath"><em>u</em></i></code></td><td>2-D matrix</td></tr>
+<tr valign="top"><td><code><i class="inlinemath"><em>numrow</em></i></code></td><td>Number of rows in the matrix</td></tr>
+<tr valign="top"><td><code><i class="inlinemath"><em>numcol</em></i></code></td><td>Number of columns in the matrix</td></tr>
+</tbody></table></div><p></p></li><li><p>Right-click inside the function and select <b>Group &amp; Subchart</b> &gt; <b>Subchart</b>.</p><p>The function looks like this graphic.</p><p class="listimage">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/ex_iterator_fcn_subcharted.png" alt="" width="271" height="114"></p></li><li><p>Double-click to open the subcharted function and select <b>Chart</b> &gt; <b>Add Pattern in Function</b> &gt; <b>Custom</b>.</p><p>The Select a Custom Pattern dialog box opens,
+listing all the patterns that you have saved in your pattern folder.</p><p class="listimage">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/ex_custom_pats_dlog.png" alt="" width="198" height="425"></p></li><li><p>Select your upper triangle iterator pattern and click <b>OK</b>.</p><p>The Pattern Wizard adds your custom pattern to
+the graphical function.</p><p class="listimage">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/upper_triangle_pattern_as_gfcn_subcharted.png" alt="" width="567" height="445"></p></li></ol><p>Before calling this function from a chart, be sure to modify
+data names, types, and sizes as necessary and substitute an appropriate
+action.</p></div>
+</div></section>
+
+<div class="clearfix"></div>
+<div class="feedbackblock">Was this topic helpful?
+<input value="Yes" onclick="openFeedbackWindow('http://www.mathworks.com/programs/bounce_hub_help.html?s_cid=Help_Topic_Survey&amp;surveyParams='+document.location.href+'-YES-R2017a');" type="button">
+<input value="No" onclick="openFeedbackWindow('http://www.mathworks.com/programs/bounce_hub_help.html?s_cid=Help_Topic_Survey&amp;surveyParams='+document.location.href+'-NO-R2017a');" type="button">
+</div>
+<!--Last updated: Fri Feb 24 15:43:38 EST 2017-->
+
+  
+
+
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+         
+ 
+ 
+
+
+<div id="location_content" style="display:none;"></div>
+
+
+<div class="modal fade" id="country-unselected" translate="no">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <object type="image/svg+xml" class="mw_logo" alt="MathWorks" data="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/pic-header-mathworks-logo2.svg" width="167px">
+          <img alt="MathWorks" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/pic-header-mathworks-logo.png" width="167px">
+        </object>
+      </div>
+      <div class="modal-body">
+        <div class="row add_margin_40">
+          <div class="col-xs-12">
+            <h1 class="icon-globe icon_color_secondary">Select Your Country</h1>
+            <p>Choose your country to get translated content where 
+available and see local events and offers. Based on your location, we 
+recommend that you select: <strong class="text_location"></strong>.</p>
+            <a href="#" id="domain_select_button" class="btn btn_secondary" data-dismiss="modal"></a>
+          </div>
+        </div>
+        <p>You can also select a location from the following list:</p>
+        <div class="row add_margin_30">
+          <div class="col-sm-4 col-md-3">
+            <h3 class="add_bottom_rule">Americas</h3>
+            <ul class="list-unstyled">
+              <li><a href="https://www.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="canada_select">Canada</a> (English)</li>
+              <li><a href="https://www.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="united_states_select">United States</a> (English)</li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-6">
+            <h3 class="add_bottom_rule">Europe</h3>
+            <div class="row">
+              <div class="col-xs-6 col-sm-12 col-md-6">
+                <ul class="list-unstyled add_margin_0_sm">
+                  <li><a href="https://nl.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="belgium_select">Belgium</a> (English)</li>
+                  <li><a href="https://se.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="denmark_select">Denmark</a> (English)</li>
+                  <li><a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="deutschland_select">Deutschland</a> (Deutsch)</li>
+                  <li><a href="https://es.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="espana_select">España</a> (Español)</li>
+                  <li><a href="https://se.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="finland_select">Finland</a> (English)</li>
+                  <li><a href="https://fr.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="france_select">France</a> (Français)</li>
+                  <li><a href="https://uk.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="ireland_select">Ireland</a> (English)</li>
+                  <li><a href="https://it.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="italia_select">Italia</a> (Italiano)</li>
+                  <li><a href="https://nl.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="luxembourg_select">Luxembourg</a> (English)</li>
+                </ul>
+              </div>
+              <div class="col-xs-6 col-sm-12 col-md-6">
+                <ul class="list-unstyled">
+                  <li><a href="https://nl.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="netherlands_select">Netherlands</a> (English)</li>
+                  <li><a href="https://se.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="norway_select">Norway</a> (English)</li>
+                  <li><a href="https://de.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="osterreich_select">Österreich</a> (Deutsch)</li>
+                  <li><a href="https://www.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="portugal_select">Portugal</a> (English)</li>
+                  <li><a href="https://se.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="sweden_select">Sweden</a> (English)</li>
+                  <li>Switzerland
+                    <ul class="list-unstyled add_indent_20">
+                      <li><a href="https://ch.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" id="swiss_german" class="switzerland_select">Deutsch</a></li>
+                      <li><a href="https://ch.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" id="swiss_english" class="switzerland_select">English</a></li>
+                      <li><a href="https://ch.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" id="swiss_french">Français</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="https://uk.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="united_kingdom_select">United Kingdom</a> (English)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <h3 class="add_bottom_rule">Asia Pacific</h3>
+            <ul class="list-unstyled">
+              <li><a href="https://au.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="australia_select">Australia</a> (English)</li>
+              <li><a href="https://in.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="india_select">India</a> (English)</li>
+              <li><a href="https://au.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="new_zealand_select">New Zealand</a> (English)</li>
+              <li><a href="https://cn.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="china_select">中国</a> (简体中文)</li>
+              <li><a href="https://jp.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="japan_select">日本</a> (日本語)</li>
+              <li><a href="https://kr.mathworks.com/help/stateflow/ug/creating-flow-graphs-with-the-pattern-wizard.html?action=changeCountry&amp;s_tid=gn_loc_drop" class="korea_select">한국</a> (한국어)</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center"><strong><a href="https://de.mathworks.com/company/worldwide.html">See all countries</a></strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE CTA - Begin -->
+    <div class="cta_container_mobile visible-sm visible-xs">
+      <div class="container-fluid">      
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="cta_box">
+<ul class="list-inline">
+<li class="cta_item cta_item_general"><a href="https://de.mathworks.com/programs/bounce/doc_tryit.html" class="icon-download">Trials</a></li>
+<li class="cta_item cta_item_general"><a href="https://de.mathworks.com/support/web_downloads_bounce.html?s_cid=1008_degr_docdn_270055" class="icon-download">Product Updates</a></li>
+<li class="cta_item cta_item_general"><a href="#" class="icon-chat" data-toggle="modal" data-target="#translation_modal">Translate This Page</a></li></ul>
+</div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MOBILE CTA - End -->
+
+        <!-- BODY TRAIL - Begin -->
+        <div class="body_trail_container">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="row"><div class="col-xs-12 col-sm-3"><h5><a href="https://de.mathworks.com/help/stateflow/index.html?s_cid=doc_ftr">Stateflow Documentation</a></h5>
+<ul class="list-unstyled hidden-xs"><li><a href="https://de.mathworks.com/help/stateflow/examples.html?s_cid=doc_ftr">Examples</a></li>
+<li><a href="https://de.mathworks.com/help/stateflow/blocklist.html?s_cid=doc_ftr">Blocks and Other Reference</a></li>
+<li><a href="https://de.mathworks.com/help/stateflow/release-notes.html?s_cid=doc_ftr">Release Notes</a></li>
+<li><a href="https://de.mathworks.com/help/pdf_doc/stateflow/index.html?s_cid=doc_ftr">PDF Documentation</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-3"><h5><a href="https://de.mathworks.com/help/index.html?s_cid=doc_ftr">Other Documentation</a></h5>
+<ul class="list-unstyled hidden-xs"><li><a href="https://de.mathworks.com/help/matlab/index.html?s_cid=doc_ftr">MATLAB</a></li><li><a href="https://de.mathworks.com/help/simulink/index.html?s_cid=doc_ftr">Simulink</a></li><li><a href="https://de.mathworks.com/help/symbolic/index.html?s_cid=doc_ftr">Symbolic Math Toolbox</a></li><li><a href="https://de.mathworks.com/help/fixedpoint/index.html?s_cid=doc_ftr">Fixed-Point Designer</a></li><li><a href="https://de.mathworks.com/help/dsp/index.html?s_cid=doc_ftr">DSP System Toolbox</a></li><li><a href="https://de.mathworks.com/help/index.html?s_cid=doc_ftr">Documentation Home</a></li></ul>
+</div>
+<div class="col-xs-12 col-sm-3"><h5><a href="https://de.mathworks.com/support/?s_cid=doc_ftr">Support</a></h5>
+<ul class="list-unstyled hidden-xs"><li><a href="https://de.mathworks.com/matlabcentral/answers/index?s_cid=doc_ftr">MATLAB Answers</a></li><li><a href="https://de.mathworks.com/support/install-matlab.html?s_cid=doc_ftr">Installation Help</a></li><li><a href="https://de.mathworks.com/support/bugreports/?s_cid=doc_ftr">Bug Reports</a></li><li><a href="https://de.mathworks.com/products/availability/?s_cid=doc_ftr">Product Requirements</a></li><li><a href="https://de.mathworks.com/downloads/?s_cid=doc_ftr">Software Downloads</a></li></ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+<div class="panel panel_color_transparent panel_color_fill">
+<div class="panel-body"> <img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/bg-trial-arrow_02.png" class="add_margin_5">
+<h4>Try MATLAB, Simulink, and Other Products</h4>
+<a href="https://de.mathworks.com/programs/trials/trial_request.html?prodcode=SF&amp;s_iid=doc_trial_SF_footer" class="icon-chevron">Get trial now </a>
+</div>
+</div>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BODY TRAIL - End -->
+
+    <footer id="footer" class="bs-footer">
+        <!-- FAT FOOTER - Begin --> 
+        <div class="container-fluid">
+          <div class="fat_footer_container">
+            <div class="execmatlabweb"> <!--Requried for Doc Test -->
+<div class="row">
+<div class="col-xs-12 col-md-12 col-lg-9 col-lg-push-3 add_margin_20">
+<div class="row">
+<div class="col-xs-12 col-sm-2">
+<h5>Produkte</h5>
+<ul class="list-unstyled">
+<li><a href="https://de.mathworks.com/products/matlab.html?s_tid=hp_ff_p_matlab">MATLAB</a></li>
+<li><a href="https://de.mathworks.com/products/simulink.html?s_tid=hp_ff_p_simulink">Simulink</a></li>
+<li><a href="https://de.mathworks.com/academia/student_version.html?s_tid=hp_ff_p_student">Software für Studierende</a></li>
+<li><a href="https://de.mathworks.com/hardware-support/home.html?s_tid=hp_ff_p_hwsupport">Hardware-Unterstützung</a></li>
+<li><a href="https://de.mathworks.com/matlabcentral/fileexchange/?s_tid=hp_ff_p_fx">File Exchange</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-2">
+<h5>Testen oder Kaufen</h5>
+<ul class="list-unstyled">
+<li><a href="https://de.mathworks.com/downloads/web_downloads/?s_iid=hp_ff_t_downloads">Downloads</a></li>
+<li><a href="https://de.mathworks.com/programs/trials/trial_request.html?s_iid=hp_ff_p_trial">Demo-Software</a></li>
+<li><a href="https://de.mathworks.com/company/aboutus/contact_us/contact_sales.html?s_iid=hp_ff_t_sales">Vertrieb kontaktieren</a></li>
+<li><a href="https://de.mathworks.com/pricing-licensing.html?s_iid=hp_ff_t_pricing">Preise und Lizenzierung</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-2">
+<h5>Lernen</h5>
+<ul class="list-unstyled">
+<li><a href="https://de.mathworks.com/help/?s_tid=hp_ff_l_doc">Dokumentation</a></li>
+<li><a href="https://de.mathworks.com/support/learn-with-matlab-tutorials.html?s_tid=hp_ff_l_tutorials">Tutorials</a></li>
+<li><a href="https://de.mathworks.com/examples/?s_tid=hp_ff_l_examples">Beispiele </a></li>
+<li><a href="https://de.mathworks.com/videos.html?s_tid=hp_ff_l_videos">Videos und Webinare</a></li>
+<li><a href="https://de.mathworks.com/services/training.html?s_tid=hp_ff_l_training">Schulungen</a></li>
+</ul>
+</div>
+<div class="clearfix" id="offcanvas_clearfix" style="display:none"></div>
+<div class="col-xs-12 col-sm-2">
+<h5>Support</h5>
+<ul class="list-unstyled">
+<li><a href="https://de.mathworks.com/support/install-matlab.html?s_tid=hp_ff_s_install">Hilfe zur Installation</a></li>
+<li><a href="https://de.mathworks.com/matlabcentral/answers/?s_tid=hp_ff_s_answers">Antworten </a></li>
+<li><a href="https://de.mathworks.com/services/consulting.html?s_tid=hp_ff_s_consulting">Consulting</a></li>
+<li><a href="http://status.mathworks.com/?s_tid=hp_ff_s_application">Status von Anwendungen</a></li>
+<li><a href="https://de.mathworks.com/licensecenter/?s_tid=hp_ff_s_license">License Center</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-2">
+<h5>Über MathWorks</h5>
+<ul class="list-unstyled">
+<li><a href="https://de.mathworks.com/company/jobs/opportunities/?s_tid=hp_ff_a_careers">Jobs &amp; Karriere</a></li>
+<li><a href="https://de.mathworks.com/company/newsroom.html?s_tid=hp_ff_a_newsroom">Presse</a></li>
+<li><a href="https://de.mathworks.com/company/aboutus/soc_mission.html?s_tid=hp_ff_a_socialmission">Social Mission</a></li>
+<li><a href="https://de.mathworks.com/company.html?s_tid=hp_ff_a_company">Über MathWorks</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-md-12 col-lg-3 col-lg-pull-9">
+<h4 class="add_font_futura_medium add_margin_0"><span translate="no">MathWorks<span translate="no"></span></span></h4>
+<p><em>Accelerating the pace of engineering and science</em></p>
+<p>MathWorks ist der führende Entwickler von Software für mathematische Berechnungen für Ingenieure und Wissenschaftler.</p>
+<p><a href="https://de.mathworks.com/discovery.html?s_tid=all_disc_mw_ff">Entdecken Sie...</a></p>
+</div>
+</div>
+</div>
+          </div>
+        </div>
+        <!-- FAT FOOTER - End -->
+      <div class="container-fluid">
+       <div class="footer" translate="no">
+<div class="row">
+<div class="col-xs-12 col-lg-9">
+<ul class="countrynav" id="countrynav">
+<li class="footernav_country">
+<a href="javascript:void(0);" data-toggle="modal" data-target="#country-unselected">
+<span class="icon-globe icon_color_quinary icon_16"></span>Deutschland
+</a>
+</li>
+</ul>
+<div class="clearfix"></div>
+<ul class="footernav">
+<li class="footernav_patents"><a href="https://de.mathworks.com/company/aboutus/policies_statements/patents.html?s_tid=gf_pat">Patente</a></li>
+<li class="footernav_trademarks"><a href="https://de.mathworks.com/company/aboutus/policies_statements/trademarks.html?s_tid=gf_trd">Handelsmarken</a></li>
+<li class="footernav_privacy"><a href="https://de.mathworks.com/company/aboutus/policies_statements.html?s_tid=gf_priv">Datenschutz</a></li>
+<li class="footernav_piracy"><a href="https://de.mathworks.com/company/aboutus/policies_statements/piracy.html?s_tid=gf_pir">Preventing Piracy</a></li>
+</ul>
+<div class="clearfix"></div>
+<div class="clearfix"></div>
+<p class="copyright" translate="no">© 1994-2017 The MathWorks, Inc.</p>
+</div>
+<div class="clearfix visible-sm add_margin_10"></div>
+<div class="col-xs-12 col-lg-3">
+<div class="social_media">
+<ul class="social_media_icons">
+<li>
+<a href="http://www.facebook.com/MATLAB" target="_blank" class="svg_link">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/ico-facebook.svg" alt="Facebook" class="ico_facebook">
+</a>
+</li>
+<li>
+<a href="http://www.twitter.com/MATLAB" target="_blank" class="svg_link">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/ico-twitter.svg" alt="Twitter" class="ico_twitter">
+</a>
+</li>
+<li>
+<a href="https://plus.google.com/117177960465154322866?prsrc=3" target="_blank" class="svg_link">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/ico-google-plus.svg" alt="Google+" class="ico_google">
+</a>
+</li>
+<li>
+<a href="http://www.linkedin.com/company/the-mathworks_2" target="_blank" class="svg_link">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/ico-linkedin.svg" alt="LinkedIn" class="ico_linkedin">
+</a>
+</li>
+<li>
+<a href="https://de.mathworks.com/company/rss.html" class="svg_link">
+<img src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/ico-rss.svg" alt="RSS" class="ico_rss">
+</a>
+</li>
+</ul>
+<div class="clearfix"></div>
+<p><em>Folgen Sie uns</em></p>
+</div>
+</div>
+</div>
+</div>
+<!-- BEGIN Adobe DTM -->
+<script type="text/javascript">
+try {
+_satellite.pageBottom();
+} catch (e) {
+//something went wrong
+}
+</script><script>
+if (typeof qcord == 'undefined') {
+  var qcord = '';
+}
+var qcrev = '';
+if (typeof qclabels == 'undefined') {
+  var qclabels = '';
+} 
+ var ezt = ezt ||[];
+
+ (function(){
+   var elem = document.createElement('script');
+   elem.src = (document.location.protocol == "https:" ? "https://secure"
+ : "http://pixel") + ".quantserve.com/aquant.js?a=p-zfNtLVVEHXE-1";
+   elem.async = true;
+   elem.type = "text/javascript";
+   var scpt = document.getElementsByTagName('script')[0];
+   scpt.parentNode.insertBefore(elem,scpt);
+ }());
+
+
+ ezt.push({qacct: 'p-zfNtLVVEHXE-1',
+           orderid: qcord,
+           revenue: qcrev,
+           labels: qclabels
+           });
+</script><!-- Google Remarketing Base Tag -->
+<script type="text/javascript">
+/* <![CDATA[ */  
+var google_conversion_id = 1023777138;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="Create%20Flow%20Charts%20with%20the%20Pattern%20Wizard%20-%20MATLAB%20&amp;%20Simulink%20-%20MathWorks%20Deutschland-Dateien/conversion.js">
+</script>
+<!-- END Adobe DTM -->
+      </div>
+    </footer>
+
+  </div>
+
+
+
+<a class="btn btn_primary" id="go-top" style="display: inline;"><span class="icon-arrow-open-up icon_24"></span></a></body></html>
